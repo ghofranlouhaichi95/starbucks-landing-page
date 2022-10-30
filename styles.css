@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap');
 
+/* General styling */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Section styling */
 section {
     background-color: #FFFF;
     width: 100%;
@@ -19,6 +21,7 @@ section {
     /* background-color:bisque; */
 }
 
+/* Header styling */
 header {
     position: absolute;
     top: 0; 
@@ -53,6 +56,11 @@ header ul li a {
     margin-left: 40px;
 }
 
+header ul li a:hover{
+    color: #017143;
+}
+
+/* Content styling */
 .content {
     position: relative;
     width: 100%;
@@ -103,10 +111,12 @@ header ul li a {
     margin-top: 50px;
 }
 
+/* Starbucks main pic styling */
 .starbucks {
     max-width: 340px;
 }
 
+/* Thumbs styling */
 .thumb {
     position: absolute;
     left: 50%;
@@ -131,6 +141,7 @@ header ul li a {
     max-width: 60px;
 }
 
+/* Social Media icons styling */
 .sci {
     position: absolute;
     top: 50%;
@@ -153,6 +164,7 @@ header ul li a {
     filter: invert(1);
 }
 
+/* Circle styling */
 .circle {
     position: absolute;
     top: 0;
