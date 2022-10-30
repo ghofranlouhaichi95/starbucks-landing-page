@@ -59,7 +59,25 @@ header ul li a {
 header ul li a:hover{
     color: #017143;
 }
+/* Toggle Menu Styling */
+.toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(/images/menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;    
+    filter: invert(1);
+}
 
+.toggle.active {
+    background: url(/images/close.png);
+    background-size: 23px;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
 /* Content styling */
 .content {
     position: relative;
@@ -112,7 +130,10 @@ header ul li a:hover{
 }
 
 /* Starbucks main pic styling */
-.starbucks {
+/* .starbucks {
+    max-width: 340px;
+} */
+.content .imgBox img {
     max-width: 340px;
 }
 
@@ -173,4 +194,68 @@ header ul li a:hover{
     height: 100%;
     background-color: #017143;
     clip-path: circle(600px at right 800px);
+}
+
+
+/* --------- Responsive Styling --------- */
+
+@media (max-width:991px) {
+
+    header {
+        padding: 20px;
+    }
+
+    header .logo {
+        max-width: 60px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    section {
+        padding: 20px 20px 120px;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .content .textBox h2 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+
+    .content .textBox {
+        max-width: 100%;
+    }
+
+    .content .imgBox {
+        width: 100%;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .content .imgBox img {
+        max-width: 300px;
+    }
+
+    .thumb li img {
+        max-width: 40px;
+    }
+
+    .circle {
+        clip-path: circle(400px at center bottom);
+    }
+
+    .sci {
+        background-color: #017143;
+        right: 0;
+        width: 50px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+    }
+
 }
