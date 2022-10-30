@@ -71,6 +71,7 @@ header ul li a:hover{
     background-repeat: no-repeat;    
     filter: invert(1);
     z-index: 11;
+    display: none;
 }
 
 .toggle.active {
@@ -216,7 +217,14 @@ header ul.navigation.active {
     background-color: #017143;
     clip-path: circle(600px at right 800px);
 }
-
+@media (max-width:1160px) {
+    .content .textBox h2 {
+        font-size: 2.9em;
+    }
+    .content .textBox p {
+        font-size: 0.9em;
+    }
+}
 
 /* --------- Responsive Styling --------- */
 
@@ -282,6 +290,9 @@ header ul.navigation.active {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
 
+    }
+    .toggle {
+        display: inline-block;
     }
 
 }
