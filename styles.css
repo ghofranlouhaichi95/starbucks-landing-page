@@ -70,14 +70,35 @@ header ul li a:hover{
     background-position: center;
     background-repeat: no-repeat;    
     filter: invert(1);
+    z-index: 11;
 }
 
 .toggle.active {
+    position: fixed;
+    right: 20px;
     background: url(/images/close.png);
     background-size: 23px;
     background-position: center;
     background-repeat: no-repeat;   
 }
+
+/* Navigation */
+
+header ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 10;
+}
+
+
 /* Content styling */
 .content {
     position: relative;
@@ -211,6 +232,11 @@ header ul li a:hover{
 
     header ul {
         display: none;
+    }
+
+    header ul li a{
+        margin: 5px 0;
+        font-size: 1.5em;
     }
 
     section {
